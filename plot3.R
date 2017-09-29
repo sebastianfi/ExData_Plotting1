@@ -1,3 +1,7 @@
+## Load the needed library data.table
+## PLEAE NOTE: the files "household_power_consumption.txt" needs to be saved in the working directory
+## (Use function getwd() to display the current working directory on your computer)
+
 library(data.table)
 alldata <- read.csv("household_power_consumption.txt", header=T, sep=';', na.strings="?", 
                       nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
